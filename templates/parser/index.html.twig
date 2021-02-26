@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <title>Parser</title>
+</head>
+<body>
+<h2>Links:</h2>
+<ul>
+    {% for link, counter in links %}
+        <li>
+            <b>
+                <a target="_blank" href="{{ link }}">{{ link }}</a>
+            </b> - {{ counter }}
+        </li>
+        <hr/>
+    {% endfor %}
+</ul>
+<h2>Words:</h2>
+<ul>
+    {% for word, counter in words %}
+        <li>
+            <b>{{ word }}</b> - {{ counter }}
+        </li>
+        <hr/>
+    {% endfor %}
+</ul>
+<h2>Images:</h2>
+<ul>
+    {% for image, counter in images %}
+        <li>
+            <b>{{ image }}</b> - {{ counter }}
+        </li>
+        <hr/>
+    {% endfor %}
+</ul>
+</body>
+</html>
